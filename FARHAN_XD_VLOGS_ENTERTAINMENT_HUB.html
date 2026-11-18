@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="FARHAN XD VLOGS — daily life, travel, food, fun challenges and adventures. Real Life. Real Vlogs. Unlimited Fun.">
+<meta property="og:title" content="FARHAN XD VLOGS">
+<meta property="og:description" content="Real Life. Real Vlogs. Unlimited Fun. Join the journey!">
+<meta property="og:type" content="website">
+<meta name="keywords" content="Farhan XD Vlogs, daily vlogs, travel, food, lifestyle, fun challenges">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2720%27 fill=%27%23090909%27/%3E%3Ctext x=%2750%25%27 y=%2767%25%27 font-size=%2750%27 font-family=%27Arial%27 font-weight=%27900%27 text-anchor=%27middle%27 fill=%27%23ff2638%27%3EXD%3C/text%3E%3C/svg%3E">
+<title>FARHAN XD VLOGS | Real Life. Real Vlogs.</title>
+<style>
+:root{--red:#ff2638;--dark:#090909;--panel:#151515;--muted:#b9b9b9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--dark);color:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#090909eF;border-bottom:1px solid #292929;backdrop-filter:blur(10px)}
+nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:950;letter-spacing:1px;font-size:1.15rem}.logo span{color:var(--red)}
+.links{display:flex;gap:24px;color:#ddd;font-size:.92rem}
+.links a:hover{color:var(--red)}
+.menu{display:none;background:none;border:1px solid #444;color:white;padding:8px 11px;border-radius:8px}
+.theme-toggle{background:transparent;border:1px solid #555;color:#fff;border-radius:7px;padding:8px 11px;cursor:pointer;margin-left:10px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery-tile{min-height:155px;border-radius:13px;border:1px solid #3a2428;background:linear-gradient(135deg,#52111c,#171012 70%);display:flex;align-items:end;padding:18px;font-weight:800}.gallery-tile span{color:#ff7c86;font-size:.8rem;display:block;font-weight:600}
+.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.roadmap .card{min-height:145px}
+.video-panel{max-width:850px;margin:auto;background:#151515;border:1px solid #3b2529;border-radius:16px;padding:28px;text-align:center}.video-screen{aspect-ratio:16/9;background:radial-gradient(circle,#4a1019,#090909 70%);border:1px solid #5a222b;border-radius:12px;display:grid;place-items:center;margin:18px 0;color:#ff7c86;font-size:1.2rem;font-weight:900}.milestones{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:850px;margin:auto}.milestone{background:#151515;border:1px solid #333;border-radius:12px;padding:20px;text-align:center}.milestone strong{display:block;color:#ff5968;font-size:1.5rem}.feedback-box{max-width:720px;margin:24px auto 0;text-align:center;background:#151515;border:1px solid #333;border-radius:14px;padding:24px}.faq details{background:#151515;border:1px solid #292929;border-radius:10px;padding:16px 18px;margin:10px 0}.faq summary{cursor:pointer;font-weight:700}.faq details p{color:var(--muted);padding-top:10px}
+body.light{--dark:#f5f5f5;--panel:#fff;--muted:#555;background:#f5f5f5;color:#171717}body.light header{background:#ffffffed;border-color:#ddd}body.light .links{color:#333}body.light .card,body.light .day,body.light .quote,body.light .faq details{background:#fff;border-color:#ddd}body.light .about{background:#eee;border-color:#ddd}body.light .hero{background:radial-gradient(ellipse at 50% 40%,#ffd8dd 0%,#fff0f1 40%,#f5f5f5 75%)}body.light .hero p,body.light .cta p{color:#333}body.light .theme-toggle{color:#171717;border-color:#aaa}body.light .gallery-tile{color:white}
+.hero{min-height:590px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,#501019 0%,#19090c 38%,#090909 72%)}
+.hero:before,.hero:after{content:"";position:absolute;width:380px;height:380px;border:1px solid #ff263833;transform:rotate(45deg);box-shadow:0 0 80px #ff263822}
+.hero:before{left:-210px;top:50px}.hero:after{right:-220px;bottom:-80px}
+.hero-content{position:relative;z-index:1;padding:70px 0}
+.kicker{color:#ff7c86;text-transform:uppercase;letter-spacing:4px;font-size:.78rem;font-weight:800}
+h1{font-size:clamp(2.7rem,8vw,6.4rem);line-height:.98;margin:20px 0;font-weight:1000;letter-spacing:-3px}
+h1 span{color:var(--red);text-shadow:0 0 28px #ff263855}
+.hero p{max-width:620px;margin:0 auto 28px;color:#ddd;font-size:1.08rem}
+.btn{display:inline-block;background:var(--red);padding:13px 23px;border-radius:7px;font-weight:800;box-shadow:0 8px 28px #ff263833;transition:.2s}
+.btn:hover{transform:translateY(-3px);background:#e51629}
+.btn.outline{background:transparent;border:1px solid #777;box-shadow:none;margin-left:9px}
+section{padding:82px 0}
+.section-title{text-align:center;font-size:2.25rem;margin-bottom:12px}
+.section-title span{color:var(--red)}
+.sub{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 38px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(145deg,#1b1b1b,#101010);border:1px solid #292929;border-radius:14px;padding:25px;transition:.2s}
+.card:hover{border-color:var(--red);transform:translateY(-4px)}
+.icon{font-size:2rem;margin-bottom:12px;color:var(--red)}
+.card h3{font-size:1.2rem;margin-bottom:7px}.card p{color:var(--muted);font-size:.94rem}
+.about{background:#101010;border-block:1px solid #252525}
+.about-box{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}
+.about-copy p{color:#c8c8c8;margin:15px 0}
+.quote{border-left:4px solid var(--red);padding:24px;background:#191919;border-radius:0 12px 12px 0;font-size:1.25rem;font-weight:800}
+.quote small{display:block;color:#aaa;font-size:.85rem;margin-top:12px;font-weight:400}
+.schedule{max-width:700px;margin:auto}
+.day{display:flex;justify-content:space-between;gap:20px;padding:17px 20px;background:#151515;border:1px solid #292929;border-radius:10px;margin:10px 0}
+.day strong{color:#fff}.day span{color:#ff7c86}
+.cta{text-align:center;background:linear-gradient(110deg,#390b12,#16090b 55%,#090909)}
+.cta p{color:#ddd;margin:10px auto 24px}
+footer{padding:25px 0;text-align:center;color:#888;border-top:1px solid #292929;font-size:.88rem}
+.social{display:flex;justify-content:center;gap:12px;margin-top:18px;flex-wrap:wrap}
+.social a{border:1px solid #444;border-radius:7px;padding:9px 15px}.social a:hover{border-color:var(--red);color:var(--red)}
+/* Desktop / laptop layout improvements */
+@media(min-width:761px){
+  .wrap{width:min(1240px,94%)}
+  header nav{min-height:104px;height:auto;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:8px 20px;padding:12px 0}
+  .logo{grid-column:1;grid-row:1;font-size:1.35rem}
+  nav>div:nth-child(2){grid-column:2;grid-row:1;justify-self:end}
+  .links{grid-column:1 / -1;grid-row:2;display:flex;justify-content:center;flex-wrap:wrap;gap:10px 22px;padding:7px 0 2px;font-size:.9rem}
+  .menu{display:none}
+  .hero{min-height:660px}
+  .hero-content{padding:100px 0}
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+  .about-box{grid-template-columns:1.15fr .85fr}
+  .gallery{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .roadmap{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .video-panel,.feedback-box{width:min(900px,100%)}
+  section{padding:92px 0}
+}
+@media(min-width:1200px){h1{font-size:6.8rem}.section-title{font-size:2.6rem}}
+@media(max-width:760px){header nav{height:70px;display:flex;gap:8px}.logo{font-size:1rem}.links{grid-column:auto;grid-row:auto}.milestones{grid-template-columns:repeat(2,1fr)}.links{display:none;position:absolute;top:70px;left:0;right:0;background:#101010;padding:18px 4%;flex-direction:column;gap:14px}.links.open{display:flex}.menu{display:block}.grid{grid-template-columns:1fr}.about-box{grid-template-columns:1fr}.hero{min-height:530px}section{padding:65px 0}.btn.outline{margin:10px 0 0}}
+</style>
+
+<style>
+/* Extra creator features */
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
+.feature-box{background:var(--card,#171717);border:1px solid rgba(255,70,70,.22);border-radius:16px;padding:22px;min-width:0}
+.feature-box h3{margin:8px 0;color:var(--text,#fff)}
+.feature-box p{color:var(--muted,#aaa);line-height:1.6}
+.feature-icon{font-size:25px;color:#ff4545}
+.poll-options{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.poll-options button,.mini-btn{border:1px solid #ff4545;background:transparent;color:inherit;padding:10px 14px;border-radius:9px;cursor:pointer}
+.poll-options button:hover,.mini-btn:hover{background:#b91520;color:#fff}
+.progress-track{height:9px;background:#333;border-radius:20px;overflow:hidden;margin:12px 0}
+.progress-fill{height:100%;width:0;background:linear-gradient(90deg,#9d101b,#ff4545);transition:width .5s}
+.countdown{font-size:clamp(22px,3vw,36px);font-weight:800;color:#ff5555;margin:12px 0}
+.badge-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.badge-pill{border:1px solid #713039;border-radius:99px;padding:8px 12px;font-size:13px}
+.newsletter-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.newsletter-form input,.feedback-form textarea{background:#101010;border:1px solid #555;color:#fff;border-radius:9px;padding:12px;min-width:0}
+.feedback-form textarea{width:100%;min-height:100px;margin:12px 0}
+.feature-box a{color:#ff7777}
+@media(max-width:850px){.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.feature-grid{grid-template-columns:1fr}.newsletter-form input{width:100%}}
+</style>
+
+
+<style>
+/* Visitor Play Zone */
+.play-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.play-card{background:linear-gradient(145deg,#1b1b1b,#101010);border:1px solid #42232a;border-radius:16px;padding:25px}
+.play-card h3{font-size:1.35rem;margin:8px 0}.play-card p{color:var(--muted);margin:8px 0 16px}
+.quiz-question{font-weight:800;margin:15px 0 10px}.quiz-options{display:grid;gap:9px}.quiz-options button{background:#242424;border:1px solid #555;color:#fff;border-radius:9px;padding:11px;text-align:left;cursor:pointer}.quiz-options button:hover{border-color:var(--red)}.quiz-options button:disabled{opacity:.7;cursor:default}.play-result{color:#ff7c86;font-weight:800;min-height:28px;margin-top:12px}
+.challenge-result{font-size:1.2rem;font-weight:800;color:#ff7c86;min-height:62px;padding:16px;background:#260d12;border-radius:10px;margin:15px 0}
+@media(max-width:700px){.play-grid{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#home">FARHAN <span>XD</span> VLOGS</a>
+<div><button class="theme-toggle" id="themeBtn" type="button" aria-label="Toggle light and dark theme">LIGHT MODE</button> <button class="menu" id="menuBtn" aria-label="Open menu">MENU</button></div>
+<div class="links" id="navLinks"><a href="#home">Home</a><a href="#about">About</a><a href="#content">What I vlog</a><a href="#schedule">Schedule</a><a href="#milestones">Goals</a><a href="#gallery">Gallery</a><a href="#playzone">Play Zone</a><a href="#featured">Videos</a><a href="#journey">Journey</a><a href="#contact">Contact</a><a href="#subscribe">Subscribe</a></div>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-content">
+<div class="kicker">Welcome to my world</div>
+<h1>FARHAN <span>XD</span><br>VLOGS</h1>
+<p>Real life, real moments and new adventures. Join me for daily-life stories, travel, food, fun challenges and whatever happens along the way.</p>
+<a class="btn" href="#content">EXPLORE THE VLOGS</a><a class="btn outline" href="#about">MEET FARHAN</a>
+</div></section>
+<section id="content"><div class="wrap">
+<h2 class="section-title">WHAT'S <span>COMING?</span></h2>
+<p class="sub">One channel, lots of experiences. Here's the kind of content you can expect.</p>
+<div class="grid">
+<article class="card"><div class="icon">▶</div><h3>Daily Life Vlogs</h3><p>Everyday moments, behind-the-scenes stories and little surprises.</p></article>
+<article class="card"><div class="icon">✈</div><h3>Travel & Exploring</h3><p>New places, local discoveries and memorable adventures.</p></article>
+<article class="card"><div class="icon">🍔</div><h3>Food Exploring</h3><p>Street food, tasty finds and honest first impressions.</p></article>
+<article class="card"><div class="icon">笑</div><h3>Funny Moments</h3><p>Good times, unexpected moments and plenty of laughs.</p></article>
+<article class="card"><div class="icon">★</div><h3>Challenges</h3><p>Fun, safe challenges and new things to try.</p></article>
+<article class="card"><div class="icon">＋</div><h3>And More</h3><p>Friends, shopping, adventures and whatever makes a good story.</p></article>
+</div></div></section>
+<section class="about" id="about"><div class="wrap about-box">
+<div class="about-copy"><div class="kicker">The person behind the camera</div><h2 class="section-title" style="text-align:left">HEY, I'M <span>FARHAN.</span></h2>
+<p>Welcome to FARHAN XD VLOGS! This channel is about capturing real moments, trying new things and sharing the journey with you.</p>
+<p>I'm just getting started, so every view, comment and subscription means a lot. Stick around — let's make some memories.</p>
+<a class="btn" href="#subscribe">JOIN THE JOURNEY</a></div>
+<div class="quote">“Dream big. Vlog bigger. Keep it real.”<small>— FARHAN XD VLOGS</small></div>
+</div></section>
+<section id="schedule"><div class="wrap"><h2 class="section-title">UPLOAD <span>PLAN</span></h2><p class="sub">A simple starting schedule. New videos will be announced on the channel.</p>
+<div class="schedule"><div class="day"><strong>Wednesday</strong><span>New Vlog</span></div><div class="day"><strong>Saturday</strong><span>New Vlog</span></div><div class="day"><strong>Sunday</strong><span>Shorts</span></div></div></div></section>
+
+<section id="featured"><div class="wrap"><h2 class="section-title">FEATURED <span>VIDEO</span></h2><p class="sub">Your latest upload will be highlighted here. Add your YouTube video link when your first vlog is ready.</p><div class="video-panel"><div class="video-screen"><div>▶<br>YOUR NEXT BIG VLOG</div></div><h3>Coming Soon</h3><p style="color:var(--muted);margin:8px 0 18px">This space is ready for your first featured vlog. The video player will be connected when you share its YouTube link.</p><a class="btn" href="mailto:farhangajiya35@gmail.com?subject=My%20YouTube%20video%20link">ADD VIDEO LINK</a></div></div></section>
+<section id="gallery"><div class="wrap"><h2 class="section-title">VLOG <span>GALLERY</span></h2><p class="sub">A little preview of the adventures this channel is about. Real photos and video highlights will appear here as the journey grows.</p><div class="gallery"><div class="gallery-tile"><div><span>01 · EVERYDAY</span>Daily Moments</div></div><div class="gallery-tile"><div><span>02 · EXPLORING</span>New Adventures</div></div><div class="gallery-tile"><div><span>03 · FOOD</span>Food Finds</div></div></div></div></section>
+
+<section id="playzone" class="about">
+ <div class="wrap">
+  <h2 class="section-title">VISITOR <span>PLAY ZONE</span></h2>
+  <p class="sub">Don't just scroll around — play a quick quiz, get a fun challenge, and help choose what comes next.</p>
+  <div class="play-grid">
+   <article class="play-card">
+    <div class="feature-icon">🧠</div><h3>FARHAN XD Mini Quiz</h3>
+    <p>Three quick questions about the channel. See how well you know the vlog world!</p>
+    <div id="quizArea"><div class="quiz-question" id="quizQuestion">Question 1 will appear here.</div><div class="quiz-options" id="quizOptions"></div><div class="play-result" id="quizResult" aria-live="polite"></div></div>
+    <button class="mini-btn" id="quizRestart" type="button">Start / Restart Quiz</button>
+   </article>
+   <article class="play-card">
+    <div class="feature-icon">🎯</div><h3>Random Fun Challenge</h3>
+    <p>Need a harmless idea for today? Generate a simple creative challenge.</p>
+    <div class="challenge-result" id="challengeResult" aria-live="polite">Tap the button to reveal your challenge.</div>
+    <button class="mini-btn" id="challengeBtn" type="button">Give Me a Challenge</button>
+   </article>
+   <article class="play-card">
+    <div class="feature-icon">🗳️</div><h3>Help Pick the Next Vlog</h3>
+    <p>Choose the type of video you'd most like to watch. This demo vote stays on your device.</p>
+    <div class="poll-options"><button type="button" data-play-vote="Travel vlog">Travel</button><button type="button" data-play-vote="Food review">Food</button><button type="button" data-play-vote="Funny challenge">Funny challenge</button></div>
+    <div class="play-result" id="playVoteResult" aria-live="polite">Your choice will appear here.</div>
+   </article>
+   <article class="play-card">
+    <div class="feature-icon">💡</div><h3>Send Your Vlog Idea</h3>
+    <p>Got a fun, safe idea for a future video? Send it to the creator by email. Don't include personal or private details.</p>
+    <a class="btn" href="mailto:farhangajiya35@gmail.com?subject=Idea%20for%20FARHAN%20XD%20VLOGS">SEND MY IDEA</a>
+   </article>
+  </div>
+  <p class="sub" style="margin-top:25px;margin-bottom:0;font-size:.85rem">Play Zone scores and votes are saved only in this browser. They are not a public leaderboard or live poll.</p>
+ </div>
+</section>
+
+<section class="about" id="journey"><div class="wrap"><h2 class="section-title">THE <span>JOURNEY</span></h2><p class="sub">Every creator starts somewhere. This is the beginning of FARHAN XD VLOGS.</p><div class="roadmap"><article class="card"><div class="icon">01</div><h3>Start Creating</h3><p>Record real moments, learn editing and publish the first vlogs.</p></article><article class="card"><div class="icon">02</div><h3>Grow Together</h3><p>Try new ideas, improve every upload and connect with viewers.</p></article><article class="card"><div class="icon">03</div><h3>Big Adventures</h3><p>Explore more places, experiences and creative projects over time.</p></article></div></div></section>
+<section id="milestones"><div class="wrap"><h2 class="section-title">GROWTH <span>GOALS</span></h2><p class="sub">Big dreams start with the first subscriber. These are future milestones, not live subscriber numbers.</p><div class="milestones"><div class="milestone"><strong>100</strong>First milestone</div><div class="milestone"><strong>500</strong>Growing community</div><div class="milestone"><strong>1K</strong>Big achievement</div><div class="milestone"><strong>10K</strong>Next-level goal</div></div></div></section>
+<section class="faq"><div class="wrap"><h2 class="section-title">QUICK <span>INFO</span></h2><p class="sub">A few things visitors might want to know.</p><details><summary>What kind of videos will I find here?</summary><p>Daily life, travel, food exploring, funny moments, friends and fun challenges.</p></details><details><summary>When will new videos be uploaded?</summary><p>The planned schedule is Wednesday and Saturday for vlogs, and Sunday for Shorts. Upload days may change, so check the YouTube channel for updates.</p></details><details><summary>Can I suggest a vlog idea?</summary><p>Yes. Send a suggestion using the email button in the contact section. Please do not share private information.</p></details></div></section>
+
+<section class="cta" id="subscribe"><div class="wrap"><div class="kicker">Don't miss the next adventure</div><h2 class="section-title">SUBSCRIBE & <span>JOIN IN!</span></h2><p>Like the videos, share them with friends and tell me what you want to see next.</p>
+<a class="btn" href="https://www.youtube.com/" target="_blank" rel="noopener">VISIT YOUTUBE</a>
+<div class="social"><a href="#home">Back to top ↑</a><a href="mailto:farhangajiya35@gmail.com?subject=FARHAN%20XD%20VLOGS%20feedback">Send Feedback</a></div>
+</div></section>
+</main>
+
+<section id="contact" class="about">
+  <div class="wrap">
+    <h2 class="section-title">LET'S <span>CONNECT</span></h2>
+    <p class="sub">Enjoying the videos? Share the channel with friends and leave a comment on the latest vlog.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">▶</div><h3>Watch & Subscribe</h3><p>Visit the YouTube channel for new vlogs, Shorts and updates.</p><p style="margin-top:16px"><a class="btn" href="https://www.youtube.com/" target="_blank" rel="noopener">OPEN YOUTUBE</a></p></article>
+      <article class="card"><div class="icon">↗</div><h3>Promote the Channel</h3><p>Share this website with friends and invite them to join the FARHAN XD VLOGS journey.</p><p style="margin-top:16px"><button class="btn" id="shareBtn" type="button" style="border:0;color:white;cursor:pointer">SHARE WEBSITE</button></p></article>
+      <article class="card"><div class="icon">✉</div><h3>Contact & Collaborations</h3><p>For business enquiries, feedback and collaborations, send an email:</p>
+<p style="margin-top:14px"><a class="btn" href="mailto:farhangajiya35@gmail.com">EMAIL FARHAN</a></p>
+<p style="margin-top:10px;color:#b9b9b9;font-size:.9rem">farhangajiya35@gmail.com</p><p style="margin-top:10px"><a href="mailto:farhangajiya35@gmail.com?subject=Vlog%20idea%20for%20FARHAN%20XD%20VLOGS" style="color:#ff7c86;text-decoration:underline">Suggest a vlog idea</a></p></article>
+    </div>
+    <div class="feedback-box"><h3>Have an idea for the next vlog?</h3><p style="color:var(--muted);margin:8px 0 16px">Send a suggestion or feedback by email. Please don't include private information.</p><a class="btn" href="mailto:farhangajiya35@gmail.com?subject=Feedback%20for%20FARHAN%20XD%20VLOGS">SEND FEEDBACK</a></div>
+  </div>
+</section>
+
+<footer><div class="wrap">© <span id="year"></span> FARHAN XD VLOGS · Real Life. Real Vlogs. Unlimited Fun.</div></footer>
+<section id="extras">
+ <div class="wrap">
+  <h2 class="section-title">MORE <span>FEATURES</span></h2>
+  <p class="sub">More ways to explore, join in and follow the FARHAN XD VLOGS journey.</p>
+  <div class="feature-grid">
+   <article class="feature-box"><div class="feature-icon">🎬</div><h3>Video Categories</h3><p>Find the kind of videos you enjoy.</p><div class="badge-row"><span class="badge-pill">Daily Vlogs</span><span class="badge-pill">Travel</span><span class="badge-pill">Food</span><span class="badge-pill">Challenges</span></div></article>
+   <article class="feature-box"><div class="feature-icon">⏳</div><h3>Next Upload Countdown</h3><p>A sample countdown to the next planned upload day (Wednesday).</p><div class="countdown" id="uploadCountdown">Loading…</div><small id="uploadCountdownLabel">Until the next Wednesday upload</small></article>
+   <article class="feature-box"><div class="feature-icon">🏆</div><h3>Community Goals</h3><p>Choose a milestone to celebrate when the channel reaches it.</p><div class="progress-track"><div class="progress-fill" id="goalProgress"></div></div><strong id="goalLabel">Next goal: 100 subscribers</strong><p style="margin-top:10px"><button class="mini-btn" id="goalCelebrate" type="button">Celebrate the first goal</button></p></article>
+   <article class="feature-box"><div class="feature-icon">💡</div><h3>Suggest a Vlog</h3><p>Have a fun, safe video idea? Send it by email.</p><a class="mini-btn" href="mailto:farhangajiya35@gmail.com?subject=Vlog%20Idea%20for%20FARHAN%20XD%20VLOGS">Send a Vlog Idea</a></article>
+   <article class="feature-box"><div class="feature-icon">📌</div><h3>Creator Noticeboard</h3><p>New uploads, schedule changes and special announcements will be posted here.</p><span class="badge-pill">Updates coming soon</span></article>
+   <article class="feature-box"><div class="feature-icon">🌐</div><h3>Share the Website</h3><p>Invite friends to visit the official FARHAN XD VLOGS website.</p><button class="mini-btn" id="shareExtra" type="button">Share Website</button></article>
+   <article class="feature-box"><div class="feature-icon">📱</div><h3>Watch on Any Screen</h3><p>Designed to adapt to phones, tablets, laptops and desktop monitors.</p><span class="badge-pill">Responsive layout</span></article>
+   <article class="feature-box"><div class="feature-icon">🛡️</div><h3>Privacy First</h3><p>No public phone number. For enquiries, use the email contact shown on this website.</p><a href="mailto:farhangajiya35@gmail.com">Email contact</a></article>
+   <article class="feature-box"><div class="feature-icon">⭐</div><h3>Fan Shout-outs</h3><p>Viewer names and messages can be featured here later, with their permission.</p><span class="badge-pill">Coming soon</span></article>
+   <article class="feature-box"><div class="feature-icon">🗳️</div><h3>Choose the Next Video</h3><p>Which type of vlog should come next?</p><div class="poll-options"><button type="button" data-vote="Travel">Travel</button><button type="button" data-vote="Food">Food</button><button type="button" data-vote="Challenge">Challenge</button></div><p id="pollResult" aria-live="polite">Vote to register your choice on this device.</p></article>
+   <article class="feature-box"><div class="feature-icon">📅</div><h3>Upload Schedule</h3><p>Planned schedule: Wednesday and Saturday vlogs, Sunday Shorts. Check the YouTube channel for actual upload announcements.</p><span class="badge-pill">Schedule may change</span></article>
+   <article class="feature-box"><div class="feature-icon">✉️</div><h3>Contact & Collaborations</h3><p>For feedback or suitable collaboration enquiries, send an email.</p><a class="mini-btn" href="mailto:farhangajiya35@gmail.com?subject=FARHAN%20XD%20VLOGS%20Enquiry">Contact by Email</a></article>
+
+   <article class="feature-box"><div class="feature-icon">🎲</div><h3>Random Vlog Idea</h3><p id="ideaText">Tap below for a fresh, fun video idea.</p><button class="mini-btn" id="randomIdea" type="button">Generate an Idea</button></article>
+   <article class="feature-box"><div class="feature-icon">🔎</div><h3>Find a Video Category</h3><p>Jump straight to the type of content you want to explore.</p><div class="poll-options"><a class="mini-btn" href="#what">Vlog Types</a><a class="mini-btn" href="#featured">Featured Video</a><a class="mini-btn" href="#gallery">Gallery</a></div></article>
+   <article class="feature-box"><div class="feature-icon">📋</div><h3>Copy Contact Email</h3><p>Copy the public contact email without showing a phone number.</p><button class="mini-btn" id="copyEmail" type="button">Copy Email</button><small id="copyEmailStatus" aria-live="polite"></small></article>
+   <article class="feature-box"><div class="feature-icon">🔖</div><h3>Save This Website</h3><p>Save a reminder in this browser so you can find the site again.</p><button class="mini-btn" id="saveSite" type="button">Save Reminder</button><small id="saveSiteStatus" aria-live="polite"></small></article>
+   <article class="feature-box"><div class="feature-icon">🔠</div><h3>Reading Size</h3><p>Make the website text a little larger for easier reading.</p><button class="mini-btn" id="fontToggle" type="button">Larger Text</button></article>
+   <article class="feature-box"><div class="feature-icon">🖨️</div><h3>Print This Page</h3><p>Open your browser's print dialog to save a paper or PDF copy.</p><button class="mini-btn" id="printPage" type="button">Print / Save PDF</button></article>
+   <article class="feature-box"><div class="feature-icon">📆</div><h3>Today's Date</h3><p>See the current date from your device.</p><strong id="todayDate">Loading date…</strong></article>
+   <article class="feature-box"><div class="feature-icon">⬆️</div><h3>Quick Back to Top</h3><p>Return to the beginning of the website in one tap.</p><a class="mini-btn" href="#home">Back to Top</a></article>
+   <article class="feature-box"><div class="feature-icon">🎧</div><h3>Watch With Sound</h3><p>For the best experience, use headphones or your device speakers when watching videos.</p><span class="badge-pill">Viewing tip</span></article>
+   <article class="feature-box"><div class="feature-icon">🧭</div><h3>Explore the Website</h3><p>Use the top navigation to move between the homepage, about section, videos, schedule and contact details.</p><span class="badge-pill">Easy navigation</span></article>
+  </div>
+ </div>
+</section>
+
+<script>
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+const themeBtn=document.getElementById('themeBtn');
+try{if(localStorage.getItem('farhanTheme')==='light'){document.body.classList.add('light');themeBtn.textContent='DARK MODE';}}catch(e){}
+themeBtn.addEventListener('click',()=>{document.body.classList.toggle('light');const light=document.body.classList.contains('light');themeBtn.textContent=light?'DARK MODE':'LIGHT MODE';document.querySelector('meta[name=theme-color]').content=light?'#f5f5f5':'#090909';try{localStorage.setItem('farhanTheme',light?'light':'dark')}catch(e){}});
+const shareBtn=document.getElementById('shareBtn');
+shareBtn.addEventListener('click',async()=>{
+  const data={title:'FARHAN XD VLOGS',text:'Check out FARHAN XD VLOGS!',url:location.href};
+  try{
+    if(navigator.share){await navigator.share(data);}
+    else if(navigator.clipboard){await navigator.clipboard.writeText(location.href);shareBtn.textContent='LINK COPIED!';}
+    else{shareBtn.textContent='COPY THE WEBSITE LINK FROM YOUR BROWSER';}
+  }catch(e){}
+});
+</script>
+
+<script>
+(function(){
+ const countdown=document.getElementById('uploadCountdown');
+ const label=document.getElementById('uploadCountdownLabel');
+ function tick(){
+   const now=new Date(), target=new Date(now);
+   const days=(3-now.getDay()+7)%7;
+   target.setDate(now.getDate()+days);
+   target.setHours(18,0,0,0);
+   if(target<=now) target.setDate(target.getDate()+7);
+   const ms=target-now, d=Math.floor(ms/86400000), h=Math.floor(ms%86400000/3600000), m=Math.floor(ms%3600000/60000);
+   countdown.textContent=d+'d '+h+'h '+m+'m';
+   label.textContent='Sample countdown · Wednesday at 6 PM local time';
+ }
+ tick();setInterval(tick,60000);
+ const celebrate=document.getElementById('goalCelebrate');
+ celebrate?.addEventListener('click',()=>{document.getElementById('goalProgress').style.width='100%';document.getElementById('goalLabel').textContent='Let’s work towards the first 100 subscribers!';});
+ document.querySelectorAll('[data-vote]').forEach(btn=>btn.addEventListener('click',()=>{
+   const choice=btn.dataset.vote;
+   document.getElementById('pollResult').textContent='Your choice: '+choice+'. This demo vote is saved only on this device.';
+   try{localStorage.setItem('farhanVlogVote',choice)}catch(e){}
+ }));
+ const share=document.getElementById('shareExtra');
+ share?.addEventListener('click',async()=>{
+   const data={title:'FARHAN XD VLOGS',text:'Check out FARHAN XD VLOGS!',url:location.href};
+   try{if(navigator.share) await navigator.share(data);else if(navigator.clipboard){await navigator.clipboard.writeText(location.href);share.textContent='Link Copied!';}else share.textContent='Copy the link from your browser address bar.';}catch(e){}
+ });
+})();
+</script>
+
+
+<script>
+(function(){
+ const ideas=[
+  'Explore a new local place and share what you discover.',
+  'Try a simple, safe one-day creative challenge.',
+  'Taste a new snack and give an honest review.',
+  'Show how you prepare and edit a vlog.',
+  'Make a fun day-in-my-life video.',
+  'Ask friends to choose between two harmless activities.'
+ ];
+ const ideaBtn=document.getElementById('randomIdea');
+ ideaBtn?.addEventListener('click',()=>{
+   document.getElementById('ideaText').textContent=ideas[Math.floor(Math.random()*ideas.length)];
+ });
+ document.getElementById('copyEmail')?.addEventListener('click',async()=>{
+   const status=document.getElementById('copyEmailStatus');
+   try{await navigator.clipboard.writeText('farhangajiya35@gmail.com');status.textContent=' Email copied!';}
+   catch(e){status.textContent=' Email: farhangajiya35@gmail.com';}
+ });
+ document.getElementById('saveSite')?.addEventListener('click',()=>{
+   const status=document.getElementById('saveSiteStatus');
+   try{localStorage.setItem('farhanSiteReminder','FARHAN XD VLOGS');status.textContent=' Reminder saved in this browser.';}
+   catch(e){status.textContent=' Use your browser bookmark to save this site.';}
+ });
+ let larger=false;
+ document.getElementById('fontToggle')?.addEventListener('click',()=>{
+   larger=!larger;document.documentElement.style.fontSize=larger?'110%':'100%';
+   document.getElementById('fontToggle').textContent=larger?'Normal Text':'Larger Text';
+ });
+ document.getElementById('printPage')?.addEventListener('click',()=>window.print());
+ const date=document.getElementById('todayDate');
+ if(date) date.textContent=new Intl.DateTimeFormat(undefined,{dateStyle:'full'}).format(new Date());
+})();
+</script>
+
+
+<script>
+(function(){
+ const questions=[
+  {q:'What is the channel called?',a:['FARHAN XD VLOGS','Farhan News Live','XD Cooking'],correct:0},
+  {q:'Which kind of content is planned for the channel?',a:['Only weather reports','Vlogs, exploring and fun challenges','Only movie reviews'],correct:1},
+  {q:'What is the channel tagline?',a:['Play Every Day','Real Life. Real Vlogs. Unlimited Fun.','The Gaming Academy'],correct:1}
+ ];
+ let index=0,score=0,locked=false;
+ const q=document.getElementById('quizQuestion'),opts=document.getElementById('quizOptions'),res=document.getElementById('quizResult'),restart=document.getElementById('quizRestart');
+ function showQuestion(){locked=false;res.textContent='';const item=questions[index];q.textContent=(index+1)+'. '+item.q;opts.innerHTML='';item.a.forEach((answer,i)=>{const b=document.createElement('button');b.type='button';b.textContent=answer;b.addEventListener('click',()=>{if(locked)return;locked=true;const correct=i===item.correct;if(correct)score++;res.textContent=correct?'Correct! Nice one.':'Not quite — the right answer is: '+item.a[item.correct];[...opts.children].forEach(x=>x.disabled=true);const next=document.createElement('button');next.className='mini-btn';next.style.marginTop='10px';next.textContent=index===questions.length-1?'See My Score':'Next Question';next.addEventListener('click',()=>{index++;if(index<questions.length)showQuestion();else{q.textContent='Quiz complete!';opts.innerHTML='';res.textContent='Your score: '+score+' / '+questions.length+'. '+(score===questions.length?'Perfect score!':'Thanks for playing!');}});opts.appendChild(next);});opts.appendChild(b);});}
+ restart.addEventListener('click',()=>{index=0;score=0;showQuestion();});showQuestion();
+ const challenges=['Describe your favourite place in 30 seconds.','Take three creative photos of everyday objects.','Make a short list of five places you want to explore.','Try drawing your dream vlog thumbnail.','Recommend a snack and explain why you like it.','Create a 15-second story using three random objects.'];
+ document.getElementById('challengeBtn').addEventListener('click',()=>{document.getElementById('challengeResult').textContent=challenges[Math.floor(Math.random()*challenges.length)];});
+ document.querySelectorAll('[data-play-vote]').forEach(b=>b.addEventListener('click',()=>{const choice=b.dataset.playVote;document.getElementById('playVoteResult').textContent='Your pick: '+choice+'. Saved on this device only.';try{localStorage.setItem('farhanPlayZoneVote',choice)}catch(e){}}));
+})();
+</script>
+
+</body></html>
